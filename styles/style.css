@@ -171,6 +171,7 @@
   font-weight: var(--text-bold);
   line-height: 83%;
   text-shadow: 4px 4px 0 var(--accent-color);
+  align-self: center;
 }
 
 @media (width >= 768px) {
@@ -185,6 +186,7 @@
   color: var(--content-title-color);
   block-size: 117px;
   font-weight: var(--text-bold);
+  align-self: center;
 }
 
 @media (width >= 768px) {
@@ -229,6 +231,8 @@ section:not(:first-of-type) {
   font-size: var(--main-font-size);
   font-weight: var(--text-bold);
   color: var(--section-title-color);
+  line-height: var(--text-line-height);
+  letter-spacing: var(--text-letter-spacing);
 }
 
 .content-title {
@@ -236,6 +240,8 @@ section:not(:first-of-type) {
   color: var(--content-title-color);
   font-weight: var(--text-bold);
   margin-block-start: 20px;
+  line-height: var(--text-line-height);
+  letter-spacing: var(--text-letter-spacing);
 }
 
 .tip-title {
@@ -243,12 +249,16 @@ section:not(:first-of-type) {
   color: var(--content-title-color);
   font-weight: var(--text-normal);
   margin-block-start: 20px;
+  line-height: var(--text-line-height);
+  letter-spacing: var(--text-letter-spacing);
 }
 
 .content-text {
   font-size: var(--main-font-size);
   color: var(--content-text-color);
   margin-block-start: 10px;
+  line-height: var(--text-line-height);
+  letter-spacing: var(--text-letter-spacing);
 }
 
 .scientific-arcticle {
@@ -283,6 +293,10 @@ section:not(:first-of-type) {
   grid-template-columns: 1fr;
 }
 
+.content-photos {
+  gap: 10px;
+}
+
 @media (width >= 768px) {
   .hard-to-concentrate,
   .concentration,
@@ -313,7 +327,7 @@ section:not(:first-of-type) {
 
   .content-photos {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1.6fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
   }
 
