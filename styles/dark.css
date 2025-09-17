@@ -20,3 +20,7 @@
   --button-text-color: #FF0070;
   --section-title-color: #FF0070;
 }
+
+.theme-dark .decoration__rec {
+  display: block;
+}

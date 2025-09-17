@@ -200,7 +200,13 @@ section:not(:first-of-type) {
 .content-section {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 19px;
+  gap: 20px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .content-photos {
@@ -265,12 +271,10 @@ section:not(:first-of-type) {
   }
 
   section:not(:first-of-type) {
-    margin-block-start: 78px;
+    margin-block-start: 80px;
   }
 
-  .hard-to-concentrate,
-  .concentration,
-  .how-to-concentrate {
+  section:not(:last-of-type) {
     grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
@@ -283,16 +287,19 @@ section:not(:first-of-type) {
     grid-column: 2;
   }
 
+  .content-grid {
+    grid-column: 1 / span 2;
+    display: grid;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+
   .hard-to-concentrate > .content > .content-title:first-child {
     margin-block-start: 0px;
   }
 
   .how-to-concentrate > .content > .content-title:first-child {
     margin-block-start: 0px;
-  }
-
-  .concentration > .section-title {
-    grid-column: 1;
   }
 
   .content-photos {
@@ -377,28 +384,33 @@ section:not(:first-of-type) {
     margin-block-end: 15px;
   }
 
-  .hard-to-concentrate,
-  .how-to-concentrate {
-    grid-template-columns: 1fr 2.1fr;
+  main > section:nth-child(odd) {
+    grid-template-columns: 1fr 2.07fr;
   }
 
-  .concentration {
+  main > .concentration {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .content-grid {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    grid-auto-flow: dense;
   }
 
   .multitasking {
     grid-column: 1;
-    grid-row: 2;
   }
 
   .food {
     grid-column: 2;
-    grid-row: 2;
   }
 
   .gadgets {
     grid-column: 3;
-    grid-row: 2;
   }
 
   .sunset {
