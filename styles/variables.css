@@ -3,7 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
-  --bg-cover: url(/images/cover-image-dark.png);
+  --bg-cover: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --content-title-color: #000028;
   --content-text-color: #F1B2CE;
